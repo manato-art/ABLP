@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+.git
+.DS_Store
+*.log
+test-results
+test-videos
+tests
+playwright.config.ts
