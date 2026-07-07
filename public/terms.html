@@ -1,0 +1,333 @@
+<!doctype html>
+<!--
+  ============================================================
+  AB Creative 利用規約 — 単体で表示できる自己完結 HTML です。
+  （外部 CSS / JS / 画像への依存はありません）
+
+  ▼ LP 担当エンジニアへの申し送り
+  ・文字コードは UTF-8 です。サーバー設定も UTF-8 で配信してください。
+  ・ライト / ダーク 両対応です。既定はライト（白背景）。
+      ダークにする場合 … <html> の data-theme="light" を削除してください。
+  ・検索エンジンに掲載したい場合 … 下の <meta name="robots"> 行を削除してください。
+  ・プライバシーポリシーは privacy.html（別ファイル）です。
+      相互リンクが必要なら LP の URL 構成に合わせて適宜追加してください。
+  ・設置ドメインは問いません（どのドメイン配下でもそのまま動作します）。
+
+  発行: Cypher One 株式会社 / 最終更新日: 2026年5月21日
+  ============================================================
+-->
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- 検索エンジンに掲載したい場合は次の1行を削除してください -->
+<meta name="robots" content="noindex, nofollow">
+<title>AB Creative 利用規約 — Cypher One 株式会社</title>
+<style>
+  :root {
+    --bg:        #0b0d18;
+    --surface:   rgba(255,255,255,0.04);
+    --border:    rgba(255,255,255,0.10);
+    --text:      #e6e8ee;
+    --text-sub:  rgba(230,232,238,0.7);
+    --accent:    #a78bfa;
+    --accent-2:  #38bdf8;
+    --maxw:      820px;
+  }
+  html[data-theme="light"] {
+    --bg:       #f8f9fc;
+    --surface:  rgba(15,18,30,0.04);
+    --border:   rgba(15,18,30,0.12);
+    --text:     #0f1220;
+    --text-sub: rgba(15,18,30,0.62);
+    --accent:   #6d28d9;
+    --accent-2: #0284c7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans JP", "Hiragino Sans", Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  .head { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+  .brand {
+    font-size: 13px; font-weight: 700; letter-spacing: 0.12em;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: clamp(22px, 4vw, 30px);
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0 0 4px;
+    color: var(--text);
+  }
+  .meta { color: var(--text-sub); font-size: 13px; margin-bottom: 28px; }
+  section.sec {
+    margin: 44px 0 0;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 24px;
+  }
+  section.sec:first-of-type { border-top: 0; padding-top: 0; }
+  h2 {
+    font-size: clamp(18px, 3vw, 22px);
+    font-weight: 800;
+    margin: 0 0 16px;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 28px 0 10px;
+    padding: 6px 12px;
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    color: var(--text);
+  }
+  p { margin: 0 0 12px; font-size: 15px; }
+  ol.articles { counter-reset: art; list-style: none; padding: 0; margin: 0; }
+  ol.articles > li {
+    counter-increment: art;
+    margin-bottom: 4px;
+    font-size: 15px;
+  }
+  ol.numlist { padding-left: 1.4em; margin: 8px 0 16px; }
+  ol.numlist > li { margin-bottom: 6px; font-size: 15px; }
+  ul.bullets { padding-left: 1.2em; margin: 8px 0 16px; }
+  ul.bullets > li { margin-bottom: 4px; font-size: 15px; }
+  .note {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin: 10px 0 16px;
+    font-size: 14px;
+    color: var(--text-sub);
+  }
+  .important {
+    background: rgba(167,139,250,0.12);
+    border: 1px solid rgba(167,139,250,0.35);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin: 10px 0 16px;
+    font-size: 14px;
+    color: var(--text);
+  }
+  .important strong { color: var(--accent); }
+  dl.kv {
+    display: grid;
+    grid-template-columns: 8.5em 1fr;
+    gap: 4px 16px;
+    margin: 10px 0 16px;
+    font-size: 15px;
+  }
+  dl.kv dt {
+    color: var(--text-sub);
+    font-weight: 600;
+  }
+  dl.kv dd { margin: 0; }
+  address {
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.7;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin: 8px 0 16px;
+  }
+  .updated {
+    font-size: 12px;
+    color: var(--text-sub);
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+  a { color: var(--accent); }
+  a:hover { color: var(--accent-2); }
+  @media (max-width: 480px) {
+    .wrap { padding: 28px 18px 64px; }
+    dl.kv { grid-template-columns: 6.5em 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <span class="brand">AB Creative</span>
+  </div>
+  <h1>利用規約</h1>
+  <div class="meta">Cypher One 株式会社</div>
+
+  <h3>第1条（適用）</h3>
+  <ol class="numlist">
+    <li>本利用規約（以下「本規約」といいます）は、Cypher One 株式会社（以下「当社」といいます）が提供する「AB Creative」（以下「本サービス」といいます）の利用条件を定めるものです。</li>
+    <li>本規約は、本サービスを利用するすべての利用者（以下「ユーザー」といいます）に適用されます。</li>
+    <li>ユーザーは、本サービスを利用する前に、本規約およびプライバシーポリシーに同意するものとします。</li>
+  </ol>
+
+  <h3>第2条（サービス内容）</h3>
+  <ol class="numlist">
+    <li>本サービスは、AIを用いて広告バナー、広告文、クリエイティブ案その他広告制作に関連する成果物の生成・編集・管理を支援するサービスです。</li>
+    <li>本サービスは、広告表現の合法性、媒体審査通過、CPA改善、売上向上、その他特定成果を保証するものではありません。</li>
+    <li>当社は、本サービスの内容、仕様、機能、料金プラン、提供条件を、必要に応じて変更できるものとします。</li>
+  </ol>
+
+  <h3>第3条（アカウント登録）</h3>
+  <ol class="numlist">
+    <li>ユーザーは、当社所定の方法によりアカウント登録を行うものとします。</li>
+    <li>ユーザーは、自らが満18歳以上の自然人または法人であることを表明し保証します。</li>
+    <li>ユーザーは、登録情報について、真実、正確かつ最新の情報を提供するものとします。</li>
+    <li>ユーザーは、アカウントを第三者に貸与、譲渡、共有してはなりません。</li>
+    <li>当社は、虚偽登録、不正利用、なりすまし、競合調査目的、その他当社が不適切と合理的に判断した場合、アカウント停止、契約解除、利用制限等を行うことができます。</li>
+  </ol>
+
+  <h3>第4条（個人向け無料トライアル）</h3>
+  <ol class="numlist">
+    <li>個人ユーザーは、7日間の無料トライアルを利用できます。</li>
+    <li>無料トライアル期間中の生成可能枚数は最大50枚までとします。</li>
+    <li>個人ユーザーが無料トライアル期間終了前までに解約しない場合、無料トライアル終了日の翌日（8日目）に、HUSTLEプラン（月額9,800円・税込10,780円）へ自動移行し、登録済み決済手段へ自動請求されます。</li>
+    <li>当社は、無料トライアル終了日の少なくとも3日前までに、課金予定日をメール等で通知します。</li>
+    <li>無料期間中は、いつでも解約可能です。</li>
+  </ol>
+
+  <h3>第5条（法人向け無料トライアル）</h3>
+  <ol class="numlist">
+    <li>法人ユーザーは、会社情報、担当者情報その他当社所定情報を提出することで、法人向け無料トライアルを申し込めます。</li>
+    <li>当社は、審査の結果、トライアル提供を拒否または停止できます。</li>
+    <li>法人向け無料トライアルでは、当社が別途明示する場合を除き、自動課金は発生しません。</li>
+  </ol>
+
+  <h3>第6条（料金および決済）</h3>
+  <ol class="numlist">
+    <li>本サービスの料金は、当社ウェブサイト、申込画面、見積書その他当社所定画面に表示します。</li>
+    <li>決済は、Stripe Japan株式会社が提供する決済システムを通じて行われます。</li>
+    <li>当社は、クレジットカード情報を直接保持しません。</li>
+    <li>有料プランは、ユーザーが解約しない限り、契約期間満了時に自動更新されます。</li>
+    <li>
+      月額料金は以下のとおりです。
+      <ul class="bullets" style="margin-top:6px">
+        <li>HUSTLE：月額9,800円（税込10,780円）</li>
+        <li>FLEX：月額50,000円（税込55,000円）</li>
+        <li>GOAT：月額120,000円（税込132,000円）</li>
+        <li>Enterprise：個別見積</li>
+      </ul>
+    </li>
+    <li>プランごとに生成上限枚数が設定されます。</li>
+    <li>超過課金にユーザーが同意した場合、追加生成について従量課金が発生します。</li>
+  </ol>
+
+  <h3>第7条（解約）</h3>
+  <ol class="numlist">
+    <li>個人ユーザーは、本サービス内の解約手続ページからいつでも解約できます。</li>
+    <li>解約は、現在の契約期間満了時に効力を生じます。</li>
+    <li>解約後も、契約期間満了時までは利用できます。ただし、当社は、セキュリティ保護、システム運用、プラン制御その他合理的理由に基づき、一部機能制限、生成停止、保存容量制限その他必要制限を行う場合があります。</li>
+    <li>期間満了後、新規生成・編集等の有料機能は利用できません。</li>
+    <li>既に支払われた料金について、日割返金は行いません。</li>
+    <li>解約とアカウント削除は別手続です。</li>
+    <li>アカウント情報、履歴、プリセット等は最大12か月保持される場合があります。</li>
+    <li>完全削除を希望する場合、ユーザーはサポート窓口へ申請するものとします。</li>
+  </ol>
+
+  <h3>第8条（入力データおよび生成データ）</h3>
+  <ol class="numlist">
+    <li>入力データの権利は、ユーザーまたは正当権利者に帰属します。</li>
+    <li>生成データについて、法令上認められる範囲で、ユーザーに利用権が帰属します。</li>
+    <li>当社は、生成データについて、独占的権利、著作権発生、第三者権利非侵害性、独自性その他を保証しません。</li>
+    <li>AI生成の性質上、第三者が類似または同一生成結果を取得する可能性があります。</li>
+    <li>ユーザーは、入力データについて必要権利を取得済みであることを保証します。</li>
+  </ol>
+
+  <h3>第9条（データ利用）</h3>
+  <ol class="numlist">
+    <li>当社は、サービス提供、品質向上、障害解析、研究開発、不正利用防止等のため、入力データ、生成データ、利用ログ等を利用できます。</li>
+    <li>当社は、入力データまたは生成データそのものを、第三者広告素材として販売しません。</li>
+    <li>当社は、識別不能加工した統計情報等を、研究開発、営業分析、M&A、事業開発等に利用できます。</li>
+    <li>法人ユーザーその他当社が認めるユーザーは、AIモデル学習利用除外を希望する場合、個別協議を申し出ることができます。</li>
+    <li>当社は、技術的実現可能性、運用制約等を踏まえ、合理的範囲で対応します。</li>
+  </ol>
+
+  <h3>第10条（広告表現等に関する責任）</h3>
+  <ol class="numlist">
+    <li>本サービスは広告制作支援ツールです。</li>
+    <li>ユーザーは、生成物利用前に、薬機法、景品表示法、特定商取引法、著作権法、商標法、媒体審査基準等への適合性を自己責任で確認するものとします。</li>
+    <li>当社は、媒体審査通過、CPA改善、CV増加、売上向上等を保証しません。</li>
+    <li>最終的な広告出稿判断は、ユーザー自身が行うものとします。</li>
+  </ol>
+
+  <h3>第11条（禁止事項）</h3>
+  <p>ユーザーは以下を行ってはなりません。</p>
+  <ol class="numlist">
+    <li>法令違反行為</li>
+    <li>権利侵害行為</li>
+    <li>虚偽・誇大広告生成</li>
+    <li>薬機法等違反表現生成</li>
+    <li>無断人物画像利用</li>
+    <li>無断商標利用</li>
+    <li>アカウント共有</li>
+    <li>スクレイピング、クローリング、ボット利用</li>
+    <li>内部API直接アクセス</li>
+    <li>リバースエンジニアリング</li>
+    <li>類似サービス開発</li>
+    <li>セキュリティ回避</li>
+    <li>第三者AI学習利用</li>
+    <li>RAG、embedding、蒸留、fine-tuning、synthetic training等への利用</li>
+    <li>管理画面、未公開機能、内部仕様等を無断でSNSその他へ公開する行為</li>
+    <li>その他当社が不適切と判断する行為</li>
+  </ol>
+
+  <h3>第12条（違反時措置）</h3>
+  <ol class="numlist">
+    <li>
+      当社は、違反時、以下措置を行えます。
+      <ul class="bullets" style="margin-top:6px">
+        <li>① アクセス遮断</li>
+        <li>② アカウント停止</li>
+        <li>③ データ削除</li>
+        <li>④ 決済停止</li>
+        <li>⑤ 法令上許容範囲での違反概要公表</li>
+      </ul>
+    </li>
+    <li>当社は、損害賠償請求法的措置、警察通報等を行う場合があります。</li>
+  </ol>
+
+  <h3>第13条（免責）</h3>
+  <ol class="numlist">
+    <li>当社は、本サービスの完全性、正確性、継続性、適法性を保証しません。</li>
+    <li>AI生成物には、誤情報、第三者権利侵害可能性、不正確内容が含まれる場合があります。</li>
+    <li>ユーザーは、利用前に自己責任で確認するものとします。</li>
+    <li>当社の損害賠償責任は、過去12か月利用料金総額を上限とします。</li>
+    <li>消費者契約法その他強行法規に従います。</li>
+  </ol>
+
+  <h3>第14条（事業承継）</h3>
+  <p>当社は、M&A、事業譲渡等に伴い、契約上地位、ユーザー情報等を承継先へ移転できるものとします。</p>
+
+  <h3>第15条（規約変更）</h3>
+  <ol class="numlist">
+    <li>当社は、合理的理由に基づき本規約を変更できます。</li>
+    <li>不利益変更時は、30日前までに通知します。</li>
+  </ol>
+
+  <h3>第16条（準拠法・管轄）</h3>
+  <ol class="numlist">
+    <li>本規約の準拠法は日本法とします。</li>
+    <li>東京地方裁判所を第一審専属合意管轄裁判所とします。</li>
+  </ol>
+
+  <p class="updated">最終更新日: 2026年5月21日 / 発行: Cypher One 株式会社</p>
+</div>
+</body>
+</html>

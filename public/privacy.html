@@ -1,0 +1,215 @@
+<!doctype html>
+<!--
+  ============================================================
+  AB Creative プライバシーポリシー — 単体で表示できる自己完結 HTML です。
+  （外部 CSS / JS / 画像への依存はありません）
+
+  ▼ LP 担当エンジニアへの申し送り
+  ・文字コードは UTF-8 です。サーバー設定も UTF-8 で配信してください。
+  ・ライト / ダーク 両対応です。既定はライト（白背景）。
+      ダークにする場合 … <html> の data-theme="light" を削除してください。
+  ・検索エンジンに掲載したい場合 … 下の <meta name="robots"> 行を削除してください。
+  ・利用規約は terms.html（別ファイル）です。
+      相互リンクが必要なら LP の URL 構成に合わせて適宜追加してください。
+  ・設置ドメインは問いません（どのドメイン配下でもそのまま動作します）。
+
+  発行: Cypher One 株式会社 / 最終更新日: 2026年5月21日
+  ============================================================
+-->
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- 検索エンジンに掲載したい場合は次の1行を削除してください -->
+<meta name="robots" content="noindex, nofollow">
+<title>AB Creative プライバシーポリシー — Cypher One 株式会社</title>
+<style>
+  :root {
+    --bg:        #0b0d18;
+    --surface:   rgba(255,255,255,0.04);
+    --border:    rgba(255,255,255,0.10);
+    --text:      #e6e8ee;
+    --text-sub:  rgba(230,232,238,0.7);
+    --accent:    #a78bfa;
+    --accent-2:  #38bdf8;
+    --maxw:      820px;
+  }
+  html[data-theme="light"] {
+    --bg:       #f8f9fc;
+    --surface:  rgba(15,18,30,0.04);
+    --border:   rgba(15,18,30,0.12);
+    --text:     #0f1220;
+    --text-sub: rgba(15,18,30,0.62);
+    --accent:   #6d28d9;
+    --accent-2: #0284c7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans JP", "Hiragino Sans", Meiryo, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  .head { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+  .brand {
+    font-size: 13px; font-weight: 700; letter-spacing: 0.12em;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: clamp(22px, 4vw, 30px);
+    font-weight: 800;
+    line-height: 1.3;
+    margin: 0 0 4px;
+    color: var(--text);
+  }
+  .meta { color: var(--text-sub); font-size: 13px; margin-bottom: 28px; }
+  section.sec {
+    margin: 44px 0 0;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    scroll-margin-top: 24px;
+  }
+  section.sec:first-of-type { border-top: 0; padding-top: 0; }
+  h2 {
+    font-size: clamp(18px, 3vw, 22px);
+    font-weight: 800;
+    margin: 0 0 16px;
+    color: var(--text);
+    line-height: 1.4;
+  }
+  h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 28px 0 10px;
+    padding: 6px 12px;
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    color: var(--text);
+  }
+  p { margin: 0 0 12px; font-size: 15px; }
+  ol.numlist { padding-left: 1.4em; margin: 8px 0 16px; }
+  ol.numlist > li { margin-bottom: 6px; font-size: 15px; }
+  ul.bullets { padding-left: 1.2em; margin: 8px 0 16px; }
+  ul.bullets > li { margin-bottom: 4px; font-size: 15px; }
+  .note {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin: 10px 0 16px;
+    font-size: 14px;
+    color: var(--text-sub);
+  }
+  dl.kv {
+    display: grid;
+    grid-template-columns: 8.5em 1fr;
+    gap: 4px 16px;
+    margin: 10px 0 16px;
+    font-size: 15px;
+  }
+  dl.kv dt {
+    color: var(--text-sub);
+    font-weight: 600;
+  }
+  dl.kv dd { margin: 0; }
+  address {
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.7;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin: 8px 0 16px;
+  }
+  .updated {
+    font-size: 12px;
+    color: var(--text-sub);
+    margin-top: 48px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+  a { color: var(--accent); }
+  a:hover { color: var(--accent-2); }
+  @media (max-width: 480px) {
+    .wrap { padding: 28px 18px 64px; }
+    dl.kv { grid-template-columns: 6.5em 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <span class="brand">AB Creative</span>
+  </div>
+  <h1>プライバシーポリシー</h1>
+  <div class="meta">Cypher One 株式会社</div>
+
+  <p>Cypher One 株式会社は、AB Creative におけるユーザー情報取扱いについて、以下のとおり定めます。</p>
+
+  <h3>取得情報</h3>
+  <ul class="bullets">
+    <li>氏名</li>
+    <li>会社名</li>
+    <li>メールアドレス</li>
+    <li>IPアドレス</li>
+    <li>操作ログ</li>
+    <li>生成履歴</li>
+    <li>決済履歴</li>
+    <li>入力データ</li>
+    <li>生成データ</li>
+    <li>等</li>
+  </ul>
+
+  <h3>利用目的</h3>
+  <ul class="bullets">
+    <li>サービス提供</li>
+    <li>本人確認</li>
+    <li>決済</li>
+    <li>品質改善</li>
+    <li>研究開発</li>
+    <li>不正利用防止</li>
+    <li>M&A対応</li>
+    <li>等</li>
+  </ul>
+
+  <h3>外部委託先</h3>
+  <ul class="bullets">
+    <li>OpenAI</li>
+    <li>Google</li>
+    <li>Stripe</li>
+    <li>Railway</li>
+    <li>Vercel</li>
+    <li>Cloudflare</li>
+    <li>等</li>
+  </ul>
+
+  <h3>国外移転</h3>
+  <p>米国その他国外へデータ移転される場合があります。</p>
+
+  <h3>安全管理</h3>
+  <p>暗号化、アクセス制御、ログ監視、Bot対策等を実施します。</p>
+
+  <h3>問い合わせ窓口</h3>
+  <address>
+    Cypher One 株式会社<br>
+    〒150-0002<br>
+    東京都渋谷区渋谷2丁目24-12<br>
+    渋谷スクランブルスクエア39F<br>
+    <a href="mailto:ab-info@cypherone.co.jp">ab-info@cypherone.co.jp</a>
+  </address>
+
+  <p class="updated">最終更新日: 2026年5月21日 / 発行: Cypher One 株式会社</p>
+</div>
+</body>
+</html>

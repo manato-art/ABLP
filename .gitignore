@@ -1,0 +1,19 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+*.log
+.DS_Store
+.vercel
+
+# build / test artifacts
+/test-results/
+/test-videos/
+/tmp/
+*.tsbuildinfo
+
+# stray pnpm lockfile (this project uses npm / package-lock.json)
+/pnpm-lock.yaml
+banners/backup/
+public/videos/_original_backup/
